@@ -1,6 +1,5 @@
 {
   "version": 2,
-  "public": false,
   "builds": [
     {
       "src": "api/screenshot.js",
@@ -9,7 +8,11 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/api/screenshot",
+      "dest": "/api/screenshot"
+    },
+    {
+      "src": "/",
       "dest": "/api/screenshot"
     }
   ]

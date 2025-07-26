@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "public": false,
+  "builds": [
+    {
+      "src": "api/screenshot.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/api/screenshot"
+    }
+  ]
+}
